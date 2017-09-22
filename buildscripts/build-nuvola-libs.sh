@@ -1,6 +1,7 @@
+
 #!/bin/bash
 cd /home/user/.git/NuvolaPlayer_Arch_liveBuilds/libs
-dirs=(diorite nuvolasdk)
+dirs=(diorite nuvolasdk libdri2-git)
 for f in ${dirs[@]}
 do
 	 cd $f
