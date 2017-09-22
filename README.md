@@ -21,4 +21,3 @@ I suggest installing the above first. They are located in the libs folder
 Then install the runtime in the runtime folder
 
 Then install applications that you desire. All packages build. But i only verify **youtube** and **google play music**
-test
