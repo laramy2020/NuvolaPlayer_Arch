@@ -12,7 +12,10 @@ Download the pkgbuilds
 -------------
 
  **Required for the runtime** Diorite
+
  **Required for apps** Nuvolasdk
+
+
 I suggest installing the above first. They are located in the libs folder
 
 Then install the runtime in the runtime folder
