@@ -14,3 +14,5 @@ git add *
 git commit -m "Cron PKGBUILD update on $date"
 git push origin master
 
+#now also updates repo
+rsync -avc /home/user/.git/binaries/* user@packages.site.com:/var/www/clients/client1/web25/web/NuvolaPlayer/
