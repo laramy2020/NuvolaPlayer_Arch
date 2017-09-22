@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/lblack/.gitshit/NuvolaPlayer_Arch_liveBuilds/libs
+cd /home/user/.git/NuvolaPlayer_Arch_liveBuilds/libs
 touch updated.txt
 dirs=(diorite nuvolasdk libdri2-git)
 for f in ${dirs[@]}

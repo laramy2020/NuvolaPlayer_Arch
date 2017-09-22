@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/lblack/.gitshit/NuvolaPlayer_Arch_liveBuilds/runtime
+cd /home/user/.git/NuvolaPlayer_Arch_liveBuilds/runtime
 touch updated.txt
 dirs=(nuvolaruntime)
 for f in ${dirs[@]}

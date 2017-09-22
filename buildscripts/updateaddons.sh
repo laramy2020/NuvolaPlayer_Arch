@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/lblack/.gitshit/NuvolaPlayer_Arch_liveBuilds/apps
+cd /home/user/.git/NuvolaPlayer_Arch_liveBuilds/apps
 touch updated.txt
 dirs=($(ls | grep app | grep -v git))
 for f in ${dirs[@]}
