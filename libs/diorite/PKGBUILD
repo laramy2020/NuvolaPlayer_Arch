@@ -1,0 +1,25 @@
+# Maintainer: Pavel Antonov <pvantonov@gmail.com>
+
+pkgname=diorite
+pkgver=4.7.0
+pkgrel=1
+pkgdesc="Diorite."
+arch=("any")
+url="https://github.com/tiliado/diorite"
+license=('custom:BSD')
+depends=('python' 'vala' 'glib2' 'ruby-gio2' 'gtk3' 'sqlite' 'gobject-introspection')
+optdepends=('valadoc:        Not sure what for')
+makedepends=('scour')
+source=(https://github.com/tiliado/${pkgname}/archive/${pkgver}.tar.gz)
+sha256sums=('a57039cfd9f75a217f39079a31a664d209169db5d60faff67a0018bf0547bd02')
+
+build() {
+    cd "$srcdir/${pkgname}-${pkgver}"
+    ./waf configure --prefix=/usr --novaladoc
+    ./waf build
+}
+
+package() {
+    cd "$srcdir/${pkgname}-${pkgver}"
+    ./waf install --destdir=${pkgdir}
+}

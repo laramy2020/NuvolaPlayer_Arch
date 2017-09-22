@@ -1,0 +1,24 @@
+# Maintainer: Laramy Black <laramy2020@gmail.com>
+
+pkgname=nuvola-app-spotify
+pkgver=2.4
+pkgrel=1
+pkgdesc="spotify integration for Nuvola Player."
+arch=("any")
+url="https://github.com/tiliado/nuvola-app-spotify"
+license=('custom:BSD')
+depends=('nuvolaruntime' 'imagemagick')
+makedepends=('nuvolasdk' 'scour')
+source=(https://github.com/tiliado/${pkgname}/archive/${pkgver}.tar.gz)
+sha256sums=('9199e3b0b6a1b27554d5bff3c4498bcce0bbccce28eb2b75379b2924ace2719f')
+
+build() {
+    cd "$srcdir/${pkgname}-${pkgver}"
+    ./configure --prefix=/usr 
+    make all
+}
+
+package() {
+    cd "$srcdir/${pkgname}-${pkgver}"
+    make DESTDIR="${pkgdir}" install
+}
