@@ -34,12 +34,12 @@ optdepends=(
 'nuvola-app-tunein:			tunein integration for Nuvola Player.'
 'nuvola-app-yandex-music:		yandex music integration for Nuvola Player.'
 'nuvola-app-youtube:			youtube integration for Nuvola Player.'
-'libdbusmenu-glib:			Not sure what for'
+'libdbusmenu-glib:			Library for passing menus over DBus'
 'libappindicator-gtk2:			Systray icon support'
 'libappindicator-gtk3:                  Systray icon support'
 'libappindicator-sharp:                 Systray icon support'
-'engine.io-client:			Not sure what for https://github.com/socketio/engine.io-client'
-'unit.js:				Not sure what for https://github.com/unitjs/unit.js/releases'
+'engine.io-client:			Cross-browser/cross-device bi-directional communication layer for Socket.IO.'
+'unit.js:				Unit testing framework for javascript / Node.js.'
 )
 build() {
     cd "$srcdir/${pkgname}-${pkgver}"
