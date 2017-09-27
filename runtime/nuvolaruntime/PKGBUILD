@@ -8,6 +8,7 @@ arch=("any")
 url="https://github.com/tiliado/nuvola-app-google-play-music"
 license=('custom:BSD')
 provides=('nuvolaplayer')
+conflicts=('nuvolaplayer')
 depends=('python' 'vala' 'diorite' 'glib2' 'ruby-gio2' 'python-gobject2' 'gtk3' 'json-glib' 'webkit2gtk' 'libnotify' 'gstreamer' 'libdri2' 'libdrm')
 makedepends=('scour')
 source=(https://github.com/tiliado/${pkgname}/archive/${pkgver}.tar.gz)
