@@ -1,4 +1,9 @@
 #!/bin/bash
+ignore=false
+case $1 in
+        -i|--ignore-version)
+                ignore=true
+                ;;
 cd /home/user/.git/NuvolaPlayer_Arch_liveBuilds/runtime
 touch updated.txt
 dirs=(nuvolaruntime)
@@ -7,7 +12,7 @@ do
 	 cd $f
 	 version=$(curl -s "https://github.com/tiliado/$f/releases" | grep "releases/tag/" | head -n 1 | sed "s/^.*tag\///" | sed "s/\".*//")
 	 curver=$(cat PKGBUILD | grep "pkgver=" | sed "s/^.*\=//")
-	 if [ "$version" != "$curver" ]
+	 if [ "$version" != "$curver" ] || [ "$ignore" = "true" ]
 	 then
 		 sed -i "s/\pkgver\=.*/pkgver\=$version/" PKGBUILD
 		 shasum=$(makepkg -g)
