@@ -2,7 +2,7 @@
 
 pkgname=nuvolaruntime
 pkgver=4.7.0
-pkgrel=3
+pkgrel=1
 pkgdesc="Nuvola Apps Runtime - Tight integration of web apps with your desktop"
 arch=("any")
 url="https://github.com/tiliado/nuvola-app-google-play-music"
@@ -35,6 +35,7 @@ optdepends=(
 'nuvola-app-tunein:			tunein integration for Nuvola Player.'
 'nuvola-app-yandex-music:		yandex music integration for Nuvola Player.'
 'nuvola-app-youtube:			youtube integration for Nuvola Player.'
+'nuvola-app-logitech-media-server	Logitech Media Server integration for Nuvola Player.'
 'libdbusmenu-glib:			Library for passing menus over DBus'
 'libappindicator-gtk2:			Systray icon support'
 'libappindicator-gtk3:                  Systray icon support'
