@@ -1,7 +1,7 @@
 # Maintainer: Pavel Antonov <pvantonov@gmail.com>
 
 pkgname=nuvolasdk
-pkgver=4.10.0
+pkgver=4.11.0
 pkgrel=1
 pkgdesc="NuvolaSDK"
 arch=("any")
@@ -11,7 +11,7 @@ makedepends=('scour')
 depends=('imagemagick')
 provides=('python-nuvolasdk')
 source=(https://github.com/tiliado/${pkgname}/archive/${pkgver}.tar.gz)
-sha256sums=('1b35b01b3d1dfddfe0772475554c10b934dd44f93def81a9049ceb57d09c8297')
+sha256sums=('d987478fdc817fd33e463bb63692c62c50103239206593e4d6da01b6aaec520b')
 
 build() {
     cd "$srcdir/${pkgname}-${pkgver}"

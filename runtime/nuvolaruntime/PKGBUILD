@@ -1,7 +1,7 @@
 #Maintainer: Laramy Black <laramy2020@gmail.com>
 
 pkgname=nuvolaruntime
-pkgver=4.10.0
+pkgver=4.11.0
 pkgrel=1
 pkgdesc="Nuvola Apps Runtime - Tight integration of web apps with your desktop"
 arch=("any")
@@ -12,7 +12,7 @@ conflicts=('nuvolaplayer' 'nuvolaruntime-mse')
 depends=('python' 'vala' 'diorite>=4.7.0' 'glib2' 'ruby-gio2' 'python-gobject2' 'gtk3' 'json-glib' 'webkit2gtk' 'libnotify' 'gstreamer' 'libdri2-git' 'libdrm')
 makedepends=('scour' 'dri2proto')
 source=(https://github.com/tiliado/${pkgname}/archive/${pkgver}.tar.gz)
-md5sums=('910ee61c17ba9ac434f2e08d1ac8c7d5')
+md5sums=('aab1c839cb04ed19ca9676bd9e18ff12')
 
 optdepends=(
 'nuvola-app-8tracks:			8tracks integration for Nuvola Player.'
@@ -46,13 +46,13 @@ optdepends=(
 )
 prepare() {
 cd "$srcdir/${pkgname}-${pkgver}"
-sed 's|usr/share/vala-0\.36|usr/share/vala-0.38|g' -i vapi/webkit2gtk-web-extension-4.0.patch vapi/glib-2.0.patch wscript
+#sed 's|usr/share/vala-0\.38|usr/share/vala-0.40|g' -i vapi/webkit2gtk-web-extension-4.0.patch vapi/glib-2.0.patch wscript
 }
 
 build() {
     cd "$srcdir/${pkgname}-${pkgver}"
-    ./waf configure --prefix=/usr --nounity --libdir=/usr/lib --noappindicator
-    ./waf build
+    ./waf configure --prefix=/usr --libdir=/usr/lib --no-vala-lint --no-unity --no-appindicator --no-cef
+    ./waf build -v
 }
 
 package() {
