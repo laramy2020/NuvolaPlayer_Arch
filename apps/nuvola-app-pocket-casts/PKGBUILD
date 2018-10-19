@@ -1,7 +1,7 @@
 # Maintainer: Laramy Black <laramy2020@gmail.com>
 
 pkgname=nuvola-app-pocket-casts
-pkgver=1.1
+pkgver=1.2
 pkgrel=1
 pkgdesc="pocket casts integration for Nuvola Player."
 arch=("any")
@@ -10,7 +10,7 @@ license=('custom:BSD')
 depends=('nuvolaruntime' 'imagemagick')
 makedepends=('nuvolasdk' 'scour')
 source=(https://github.com/tiliado/${pkgname}/archive/${pkgver}.tar.gz)
-sha256sums=('39b645c4d6ea5fc9f4b048904d003e4442aba87c6fffcec47267b52ba5e38321')
+sha256sums=('e80c09e6b4b9204dd547e89c930308ab8a8b028d8ed9daff770ecf9cc7b0636f')
 
 build() {
     cd "$srcdir/${pkgname}-${pkgver}"

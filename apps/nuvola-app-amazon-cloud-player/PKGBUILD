@@ -3,7 +3,7 @@
 # Contributor: Patrick Burroughs (Celti) <celti@celti.name>
 
 pkgname=nuvola-app-amazon-cloud-player
-pkgver=5.7
+pkgver=5.8
 pkgrel=1
 pkgdesc="amazon cloud player integration for Nuvola Player."
 arch=("any")
@@ -12,7 +12,7 @@ license=('custom:BSD')
 depends=('nuvolaruntime' 'imagemagick')
 makedepends=('nuvolasdk' 'scour')
 source=(https://github.com/tiliado/${pkgname}/archive/${pkgver}.tar.gz)
-sha256sums=('8a0737a658d12c1f711d919a1189a74bc3ca36bee07d9e40bb1462edfec1dd76')
+sha256sums=('5ca7f45d19b376bd7ebe4bcdd93a4b0281618f1663949b14fce70c59388c2c60')
 
 build() {
     cd "$srcdir/${pkgname}-${pkgver}"
