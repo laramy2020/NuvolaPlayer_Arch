@@ -1,7 +1,7 @@
 # Maintainer: Laramy Black <laramy2020@gmail.com>
 
 pkgname=nuvola-app-jupiter-broadcasting
-pkgver=1.4
+pkgver=
 pkgrel=1
 pkgdesc="Jupiter broadcasting integration for Nuvola Player."
 arch=("any")
@@ -10,7 +10,7 @@ license=('custom:BSD')
 depends=('nuvolaruntime' 'imagemagick')
 makedepends=('nuvolasdk' 'scour')
 source=(https://github.com/tiliado/${pkgname}/archive/${pkgver}.tar.gz)
-sha256sums=('3bc2ae59e5130668a71820fbe9f73822938eec509655b3ec2bfe0e08a73eebe9')
+
 
 build() {
     cd "$srcdir/${pkgname}-${pkgver}"

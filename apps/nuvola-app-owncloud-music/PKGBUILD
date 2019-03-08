@@ -1,7 +1,7 @@
 # Maintainer: Laramy Black <laramy2020@gmail.com>
 
 pkgname=nuvola-app-owncloud-music
-pkgver=1.4
+pkgver=
 pkgrel=1
 pkgdesc="owncloud music integration for Nuvola Player."
 arch=("any")
@@ -10,7 +10,7 @@ license=('custom:BSD')
 depends=('nuvolaruntime' 'imagemagick')
 makedepends=('nuvolasdk' 'scour')
 source=(https://github.com/tiliado/${pkgname}/archive/${pkgver}.tar.gz)
-sha256sums=('058f55e14ed32f5e06c1a52bbf3f83667f079b3a3b5aba3d2d8b6a6678cdf979')
+
 
 build() {
     cd "$srcdir/${pkgname}-${pkgver}"
