@@ -1,7 +1,7 @@
 # Maintainer: Laramy Black <laramy2020@gmail.com>
 
 pkgname=nuvola-app-jupiter-broadcasting
-pkgver=
+pkgver=1.4
 pkgrel=1
 pkgdesc="Jupiter broadcasting integration for Nuvola Player."
 arch=("any")

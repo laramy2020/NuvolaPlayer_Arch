@@ -1,7 +1,7 @@
 # Maintainer: Pavel Antonov <pvantonov@gmail.com>
 
 pkgname=nuvola-app-logitech-media-server
-pkgver=
+pkgver=2.2
 pkgrel=1
 pkgdesc="Logitech Media Server integration for Nuvola Player."
 arch=("any")

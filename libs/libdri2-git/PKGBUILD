@@ -3,7 +3,7 @@
 
 pkgname=libdri2-git
 _gitname=libdri2
-pkgver=
+pkgver=4f1eef
 pkgrel=1
 pkgdesc="Library for the DRI2 extension to the X Window System"
 arch=('any')

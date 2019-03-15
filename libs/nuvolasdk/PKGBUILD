@@ -1,7 +1,7 @@
 # Maintainer: Pavel Antonov <pvantonov@gmail.com>
 
 pkgname=nuvolasdk
-pkgver=
+pkgver=4.16.0
 pkgrel=1
 pkgdesc="NuvolaSDK"
 arch=("any")

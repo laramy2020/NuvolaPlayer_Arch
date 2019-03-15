@@ -1,7 +1,7 @@
 # Maintainer: Laramy Black <laramy2020@gmail.com>
 
 pkgname=nuvola-app-spotify
-pkgver=
+pkgver=3.1
 pkgrel=1
 pkgdesc="spotify integration for Nuvola Player."
 arch=("any")

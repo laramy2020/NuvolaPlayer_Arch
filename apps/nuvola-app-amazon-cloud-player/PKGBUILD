@@ -3,7 +3,7 @@
 # Contributor: Patrick Burroughs (Celti) <celti@celti.name>
 
 pkgname=nuvola-app-amazon-cloud-player
-pkgver=
+pkgver=5.9
 pkgrel=1
 pkgdesc="amazon cloud player integration for Nuvola Player."
 arch=("any")

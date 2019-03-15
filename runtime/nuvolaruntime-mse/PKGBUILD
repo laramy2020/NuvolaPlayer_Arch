@@ -2,7 +2,7 @@
 
 pkgname=nuvolaruntime-mse
 _pkgname=nuvolaruntime
-pkgver=
+pkgver=4.16.0
 pkgrel=1
 pkgdesc="Nuvola Apps Runtime - Tight integration of web apps with your desktop"
 arch=("any")
